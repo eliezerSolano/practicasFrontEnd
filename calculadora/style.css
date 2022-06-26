@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(64, 255, 0, 0.379);
+}
+
+.cuerpo{
+    border: 2px solid black;
+}
