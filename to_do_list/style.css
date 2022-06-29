@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondoBody: #ebebeb;
+    --colorWords: #596dc3;
+    --colorBtn: #c7a1c7;
+    --letra: "Roboto Mono", monospace;
+}
+
+body {
+    background-color: var(--fondoBody);
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin: 0px 0px 1rem;
+}
+
+header h1 {
+    font-family: "Merriweather", serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    border-radius: 10px;
+}
+
+.estado {
+    width: 80%;
+}
+
+.instruccion {
+    font-family: --letra;
+    color: var(--colorWords);
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.estadoText {
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#i_texto {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+#botonEnvio {
+    width: auto;
+    padding: 10px 3rem 10px 3rem;
+    border: 1px solid var(--colorWords);
+    border-radius: 5px;
+    font-family: --letra;
+    margin: 3rem 0px 3rem;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+#botonEnvio:hover {
+    background-color: var(--colorBtn);
+    color: white;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.card_principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#conenedorPadre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#conenedorPadre>section {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.card_actv {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0rem 1rem;
+    box-shadow: 11px 27px 46px -16px rgb(63 133 240 / 84%);
+    -webkit-box-shadow: 11px 27px 46px -16px rgb(63 133 240 / 84%);
+    -moz-box-shadow: 11px 27px 46px -16px rgba(63, 133, 240, 0.84);
+}
+
+.card_actv>h3 {
+    text-align: center;
+}
+
+.pendiente {
+    background-color: lightcoral;
+}
+
+.despues {
+    background-color: lightblue;
+}
+
+.hecha {
+    background-color: lightgreen;
+}
+
+.estadoSpan {
+    color: white;
+    font-size: 1.3em;
+}
+
+#btnBorrar {
+    position: relative;
+    left: 35%;
+    margin-top: 5rem;
+    padding: 10px 3rem 10px 3rem;
+    border: 1px solid var(--colorWords);
+    border-radius: 5px;
+    font-family: --letra;
+    width: 30%;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+#btnBorrar:hover {
+    background-color: red;
+    color: white;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+}

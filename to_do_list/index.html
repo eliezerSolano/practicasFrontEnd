@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>To do list</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titulo">Holaa, bienvenido a tu lista de actividades</h1>
+    </header>
+
+    <main>
+        <div class="formulario">
+
+            <span class="instruccion">¿Qué actividad deseas registrar?</span>
+            <input id="i_texto" type="text" name="actividad" id="input_actividad" placeholder="Ingresa aqui el nombre">
+            <div class="estado">
+                <p class="instruccion">¿En que estado esta la actividad?</p>
+                <span class="estadoText">Pendiente</span>
+                <input class="i_radio" type="radio" name="radio" id="prioridad1">
+                <span class="estadoText">Para despues</span>
+                <input class="i_radio" type="radio" name="radio" id="prioridad2">
+                <span class="estadoText">Hecha</span>
+                <input class="i_radio" type="radio" name="radio" id="prioridad3">
+
+            </div>
+
+            <input type="button" id="botonEnvio" onclick="accion();" name="" value="Añadir"></input>
+
+
+        </div>
+
+        <div class="card_principal">
+            <h2>Actividades</h2>
+            <div id="conenedorPadre">
+                </section>
+
+            </div>
+
+            <button id="btnBorrar" onclick="eliminar()">Borrar</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
